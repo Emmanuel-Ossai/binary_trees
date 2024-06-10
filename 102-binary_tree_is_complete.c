@@ -37,7 +37,6 @@ void free_queue(levelorder_queue_t *head)
 		levelorder_queue_t *tmp = head;
 
 		head = head->next;
-
 		free(tmp);
 	}
 }
@@ -81,7 +80,6 @@ void pop(levelorder_queue_t **head)
 	free(*head);
 	*head = tmp;
 }
-
 
 
 /**
